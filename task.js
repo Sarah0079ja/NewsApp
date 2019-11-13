@@ -16,14 +16,14 @@ function loadNews(e) {
             response.articles.forEach(function (articles) {
                 output += `
 
-              <div class="container">
-                  <div class="pic"><img src=${articles.urlToImage} width= 600px></div>
-                   <div class="cool">
+              <div class="container1">
+                  <img src=${articles.urlToImage} width= 350px>
+                  <ul> 
                         <h3>${articles.title}</h3>
                         <h5>${articles.author}</h5>
                         <p>${articles.description}</p>
                         <a href=${articles.url}>Read more...</a> 
-                 </div>
+                 </ul>
             </div>
                 `;
 
@@ -35,4 +35,4 @@ function loadNews(e) {
     }
     xhr.send();
     e.preventDefault();
-}
+}dr
